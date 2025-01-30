@@ -22,6 +22,16 @@
             key-positions = <31 32>;
             layers = <0>;
         };
+
+        left_shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <39 38>;
+        };
+
+        right_shift {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <40 41>;
+        };
     };
 
     macros {
