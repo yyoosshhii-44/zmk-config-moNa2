@@ -117,7 +117,7 @@
 &kp LC(LEFT)    &trans                &trans          &trans                 &trans   &trans    &trans  &trans                            &kp LC(RIGHT)
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_4 {
