@@ -89,21 +89,21 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE            &kp LS(NUMBER_1)      &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(N5)                                &trans             &trans      &trans  &trans  &trans
-&kp TAB               &kp LS(N7)            &trans            &kp LS(N9)        &kp LEFT_BRACKET  &trans       &kp PLUS   &kp RIGHT_BRACKET  &kp LS(N0)  &trans  &trans  &trans
-&kp LSHFT             &trans                &trans            &kp SEMI          &kp COMMA         &kp LG(C)    &kp LG(V)  &kp PERIOD         &kp COLON   &trans  &trans  &kp RIGHT_SHIFT
-&kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))    &trans            &trans            &trans       &trans     &trans                                         &trans
+&kp ESCAPE            &kp LS(NUMBER_1)      &kp LS(NUMBER_2)  &kp LS(NUMBER_3)      &kp LS(N5)                                &trans             &trans                 &trans  &trans  &trans
+&kp TAB               &kp LS(N7)            &trans            &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &trans       &kp PLUS   &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans
+&kp LSHFT             &trans                &trans            &kp SEMI              &kp COMMA         &kp LG(C)    &kp LG(V)  &kp PERIOD         &kp COLON              &trans  &trans  &kp RIGHT_SHIFT
+&kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))    &trans                &trans            &trans       &trans     &trans                                                    &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
         };
 
         layer_2 {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp CARET         &kp AMPERSAND      &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH   &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                  &kp MINUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans                &mt RIGHT_SHIFT BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                     &trans          &trans                                                                &kp PIPE
+&kp MINUS        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp CARET        &kp AMPERSAND  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                  &kp MINUS       &kp PERCENT      &kp AMPERSAND  &trans     &trans                &mt RIGHT_SHIFT BACKSLASH
+&trans           &kp PERCENT      &kp COMMA        &trans           &trans        &trans                     &trans          &trans                                                           &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -117,7 +117,7 @@
 &kp LC(LEFT)    &trans                &trans          &trans                 &trans   &trans    &trans  &trans                            &kp LC(RIGHT)
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOL_UP>;
         };
 
         layer_4 {
