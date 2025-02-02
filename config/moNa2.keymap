@@ -92,10 +92,10 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE            &kp LS(NUMBER_1)      &kp LS(NUMBER_2)  &kp LS(NUMBER_3)      &kp LS(N5)                                &trans             &trans                 &trans        &trans  &kp LC(LA(DEL))
-&kp TAB               &kp LS(N7)            &trans            &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &trans       &kp PLUS   &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans        &trans  &trans
-&kp LSHFT             &trans                &kp APOS          &kp SEMI              &kp COMMA         &kp LG(C)    &kp LG(V)  &kp PERIOD         &kp COLON              &kp LS(APOS)  &trans  &kp RIGHT_SHIFT
-&kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))    &trans                &trans            &trans       &trans     &trans                                                          &trans
+&kp ESCAPE            &kp EXCL              &kp AT             &kp HASH              &kp PERCENT                           &trans             &trans                 &trans  &trans  &kp LC(LA(DEL))
+&kp TAB               &kp AMPERSAND         &trans             &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &trans    &kp PLUS  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans
+&kp LSHFT             &trans                &kp DOUBLE_QUOTES  &kp SEMI              &kp COMMA         &trans    &trans    &kp PERIOD         &kp COLON              &trans  &trans  &kp RIGHT_SHIFT
+&kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))     &trans                &trans            &trans    &trans    &trans                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
