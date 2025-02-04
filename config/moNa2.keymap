@@ -94,7 +94,7 @@
             bindings = <
 &kp ESCAPE            &kp EXCL              &kp AT             &kp HASH              &kp PERCENT                           &trans             &trans                 &trans  &trans  &kp LC(LA(DEL))
 &kp TAB               &kp AMPERSAND         &trans             &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &trans    &kp PLUS  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans
-&kp LSHFT             &trans                &kp DOUBLE_QUOTES  &kp SEMI              &kp COMMA         &trans    &trans    &kp PERIOD         &kp COLON              &trans  &trans  &kp RIGHT_SHIFT
+&kp CLCK              &trans                &kp DOUBLE_QUOTES  &kp SEMI              &kp COMMA         &trans    &trans    &kp PERIOD         &kp COLON              &trans  &trans  &kp RIGHT_SHIFT
 &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))     &trans                &trans            &trans    &trans    &trans                                                    &trans
             >;
 
@@ -105,8 +105,8 @@
             bindings = <
 &kp MINUS   &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                                             &kp CARET        &kp AMPERSAND  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH   &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&kp PERIOD  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL                  &kp MINUS       &kp PERCENT      &kp AMPERSAND  &trans     &trans                &mt RIGHT_SHIFT BACKSLASH
-&kp COMMA   &kp PERCENT   &kp COMMA     &trans        &trans        &trans                     &trans          &trans                                                           &kp PIPE
+&kp PERIOD  &kp COMMA     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL                  &kp MINUS       &kp PERCENT      &kp AMPERSAND  &trans     &trans                &mt RIGHT_SHIFT BACKSLASH
+&trans      &kp PERCENT   &kp NUMBER_0  &trans        &trans        &trans                     &trans          &trans                                                           &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
