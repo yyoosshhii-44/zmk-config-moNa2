@@ -94,7 +94,7 @@
             bindings = <
 &kp ESCAPE            &kp EXCL              &kp AT             &kp HASH              &kp PERCENT                           &trans             &trans                 &trans  &trans  &kp LC(LA(DEL))
 &kp TAB               &kp AMPERSAND         &trans             &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &trans    &kp PLUS  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans
-&kp LEFT_CONTROL      &trans                &kp DOUBLE_QUOTES  &kp SEMI              &kp COMMA         &trans    &trans    &kp PERIOD         &kp COLON              &trans  &trans  &kp RIGHT_SHIFT
+&trans                &trans                &kp DOUBLE_QUOTES  &kp SEMI              &kp COMMA         &trans    &trans    &kp PERIOD         &kp COLON              &trans  &trans  &trans
 &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))     &trans                &trans            &trans    &trans    &trans                                                    &trans
             >;
 
