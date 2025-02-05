@@ -9,8 +9,8 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
-    tapping-term-ms = <250>;
+    quick-tap-ms = <200>;
+    tapping-term-ms = <200>;
 };
 
 / {
