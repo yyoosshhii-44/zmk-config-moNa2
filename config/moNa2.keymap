@@ -103,10 +103,10 @@
 
         layer_2 {
             bindings = <
-&kp MINUS   &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                                             &kp CARET        &kp AMPERSAND  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH   &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&kp PERIOD  &kp COMMA     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL                  &kp MINUS       &kp PERCENT      &kp AMPERSAND  &trans     &trans                &mt RIGHT_SHIFT BACKSLASH
-&trans      &kp PERCENT   &kp NUMBER_0  &trans        &trans        &trans                     &trans          &trans                                                           &kp PIPE
+&kp MINUS    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                                 &kp CARET        &kp AMPERSAND  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp PERIOD   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &kp EQUAL                  &kp MINUS       &kp PERCENT      &kp AMPERSAND  &trans     &trans                &mt RIGHT_SHIFT BACKSLASH
+&kp PERCENT  &kp NUMBER_0  &kp NUMBER_0  &trans        &trans        &trans                     &trans          &trans                                                           &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
