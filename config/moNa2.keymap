@@ -95,7 +95,7 @@
 &kp ESCAPE            &kp EXCL              &kp AT             &kp HASH              &kp PERCENT                           &trans             &trans                 &trans  &trans  &kp LC(LA(DEL))
 &kp TAB               &kp AMPERSAND         &trans             &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &trans    &kp PLUS  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans
 &trans                &trans                &kp DOUBLE_QUOTES  &kp SEMI              &kp COMMA         &trans    &trans    &kp PERIOD         &kp COLON              &trans  &trans  &trans
-&kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))     &trans                &trans            &trans    &trans    &trans                                                    &trans
+&kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))     &trans                &trans            &to 2     &trans    &trans                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
@@ -103,13 +103,13 @@
 
         layer_2 {
             bindings = <
-&kp MINUS    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                                 &kp CARET        &kp AMPERSAND  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&kp PERIOD   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &kp EQUAL                  &kp MINUS       &kp PERCENT      &kp AMPERSAND  &trans     &trans                &mt RIGHT_SHIFT BACKSLASH
-&kp PERCENT  &kp NUMBER_0  &kp NUMBER_0  &trans        &trans        &trans                     &trans          &trans                                                           &kp PIPE
+&kp MINUS    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp PLUS                                                     &kp CARET        &kp AMPERSAND  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp ASTERISK      &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp PERIOD   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp COMMA         &kp TAB                    &kp MINUS       &kp PERCENT      &kp AMPERSAND  &trans     &trans                &mt RIGHT_SHIFT BACKSLASH
+&kp PERCENT  &kp EQUAL     &kp NUMBER_0  &kp BACKSPACE  &mt LSHIFT ENTER  &to 0                      &trans          &kp LANGUAGE_2                                                   &kp PIPE
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         layer_3 {
