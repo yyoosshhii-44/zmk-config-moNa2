@@ -16,7 +16,7 @@
         compatible = "zmk,combos";
 
         sco {
-            bindings = <&to 6>;
+            bindings = <&mo 5>;
             key-positions = <31 32>;
         };
     };
