@@ -89,13 +89,13 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))     &kp UP_ARROW    &kp LC(TAB)          &trans                     &trans  &trans  &trans  &trans  &trans
+&kp HOME        &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LEFT_BRACE)  &kp LG(R)       &kp LG(RIGHT_BRACE)  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(LEFT)    &trans              &trans          &trans               &trans   &trans    &trans  &trans                          &kp LC(RIGHT)
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_4 {
