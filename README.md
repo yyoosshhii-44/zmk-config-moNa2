@@ -112,5 +112,5 @@ moNa製作者である[白湯_sayu](https://x.com/Pooh_pol0)が自作キーボ�
 [自作無線キーボード完全解説 基板設計編](https://note.com/pooh_polo/n/n578894875414)  
 [自作無線キーボード完全解説 ファームウェア作成編](https://note.com/pooh_polo/n/n2a34a922b4c8)  
 [自作無線キーボード完全解説 動作確認編](https://note.com/pooh_polo/n/nbcdc97199874)  
-[自作無線キーボード完全解説 ケース設計・完成編](https://note.com/pooh_polo/n/n9bd5627195a4)
+[自作無線キーボード完全解説 ケース設計・完成編](https://note.com/pooh_polo/n/n9bd5627195a4)  
 ※基板設計/ファームウェア作成/ケース設計・完成編は有料記事になっています(購入特典あり) 
