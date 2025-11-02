@@ -1,5 +1,8 @@
 # moNa2 詳細説明
 
+moNa2の最新ファームウェアはこちら
+> https://github.com/sayu-hub/zmk-config-moNa2-v2
+
 ## 目次
   - [1. moNaについて](#1-monaについて)
     - [moNa](#mona---左手トラックボール版)
