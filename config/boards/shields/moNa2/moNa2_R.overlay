@@ -1,4 +1,7 @@
-#include "moNa2.dtsi"
+#include "mona2.dtsi"
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
 
 &default_transform {
     col-offset = <6>;
@@ -14,24 +17,17 @@
             ;
 };
 
-/ {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-
-    };
-};
 
 &pinctrl {
-    spi0_default: spi0_default {
+    spi0_default: spi0_default {    //通常時(SPI通信中)のピン構成
         group1 {
-            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 4)>,
+            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>, //P0.05を指定(SCLK)
+                <NRF_PSEL(SPIM_MOSI, 0, 4)>,    //P0.04を指定(SDIOだからMOSI,MISO両方の役割を担う)
                 <NRF_PSEL(SPIM_MISO, 0, 4)>;
         };
     };
 
-    spi0_sleep: spi0_sleep {
+    spi0_sleep: spi0_sleep {    //スリープ時のピン構成(省電力)
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 4)>,
@@ -41,24 +37,40 @@
     };
 };
 
+
 &spi0 {
     status = "okay";
-    compatible = "nordic,nrf-spim";
+    compatible = "nordic,nrf-spim"; //マイコンがnRFシリーズ
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
+    cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;  //P0.09を指定(CS)
 
-    trackball: trackball@0 {
+    trackball_central: trackball_central@0 {
         status = "okay";
-        compatible = "pixart,pmw3610";
+        compatible = "pixart,paw3222";  //トラボセンサ用のドライバとバインド
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        automouse-layer = <5>;
-        scroll-layers = <6>;
+        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //P0.02を指定(MOTION)
 
     };
+};
+
+
+// Overrides for the input listener node
+&trackball_central_listener {
+    status = "okay";
+    device = <&trackball_central>;
+
+    scroller {
+        layers = <2>;
+        input-processors = <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
+                           <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
+                           <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
+                           <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
+                           <&zip_scroll_scaler 1 5>;                           //スクロール量を1/4倍
+    };
+
 };
 
 
